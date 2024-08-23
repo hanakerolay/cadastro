@@ -3,109 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/007b27f104.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Cadastro</title>
 </head>
 <body>
-    <div>
+    <div class="container">
         <div class="sec1">
             <h1>Não é associado? Faça seu Cadastro</h1>
             <form action="">
+                <i class="fa-regular fa-user"></i>
                 <label for="nome">Nome</label>
                 <input type="nome" id="nome" type="text" placeholder="Username">
+                
     
+                <i class="fa-solid fa-user"></i>
                 <label for="nome">Nome Completo</label>
                 <input type="nome" id="nome" type="text" placeholder="Username">
     
+                <i class="fa-solid fa-file"></i>
                 <label for="number">CPF</label>
-                <input type="cpf" id="cpf" type="number" placeholder="Digite seu cpf">
+                <input type="cpf" id="cpf" type="number" placeholder=" 000.000.000-00">
     
+                <i class="fa-solid fa-envelope"></i>
                 <label for="email">E-mail</label>
                 <input type="email" id="email" type="email" placeholder="Digite seu email">
                 
+                <i class="fa-solid fa-globe"></i>
                 <label for="webSite">WebSite</label>
                 <input type="webSite" id="webSite" type="webSite" placeholder="Digite o site">
     
+                <i class="fa-solid fa-location-dot"></i>
                 <label for="endereço">Endereço</label>
                 <input type="endereço" id="endereço" type="endereço" placeholder="Digite seu endereço">
             </form>
         </div>
     
-        <div>
+        <div class="bai">
             <label for="bairro">Bairro</label>
             <input type="bairro" id="bairro" type="bairro">
-    
-            <label for="cep">Cep</label>
-            <input type="cep" id="cep" type="cep">
-    
-            <label for="telefone">Telefone</label>
-            <input type="telefone" id="telefone" type="telefone">
-    
-            <label for="telefone">Telefone</label>
-            <input type="telefone" id="telefone" type="telefone">
-    
-            <label for="username">Data Nascimento</label>
-            <input type="date">
-    
+            <div>
+                <label for="number">Cep</label>
+                <input type="cep" id="cep" type="cep"placeholder=" 0000-0000">
+            </div>
+            <div class="tel">
+                <label for="fone">Telefone</label>
+                <input type="tel" id="fone" name="fone" required pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder=" 00000-0000">
+            </div>
+            <div>
+                <label for="username">Data Nascimento</label>
+                <input type="date">
+            </div>
+            <div>
+                <label for="fone">Celular</label>
+                <input type="tel" id="fone" name="fone" required pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="DD 00000-0000">
+            </div>
+            
+        </div>
+
+        <div class="bai">
+            <label for="cidade">Cidade</label>
+            <input type="cidade" id="cidade" type="cidade">
+            <div class="civil">
+                <label for="uf">UF</label>
+                <select name="uf" id="uf">
+                <option value="Acre">AC</option>
+                <option value="Alagoas">AL</option>
+                <option value="Amazonas">AM</option>
+                <option value="Bahia">BA</option>
+                <option value="Ceará">CE</option>
+                <option value="Distrito Federal">DF</option>
+                <option value="Espírito Santo">ES</option>
+                <option value="Goiás">GO</option>
+                <option value="Maranhão">MA</option>
+                <option value="Mato Grosso">MT</option>
+                <option value="Mato Grosso do Sul">MS</option>
+                <option value="Minas Gerais">MG</option>
+                <option value="Pará">PA</option>
+                <option value="Paraíba">PB</option>
+                <option value="Paraná">PR</option>
+                <option value="Pernambuco">PE</option>
+                <option value="Piauí">PI</option>
+                <option value="Rio de Janeiro">RJ</option>
+                <option value="Rio Grande do Norte">RN</option>
+                <option value="Rio Grande do Sul">RS</option>
+                <option value="Rondônia">RO</option>
+                <option value="Roraima">RR</option>
+                <option value="Santa Catarina">SC</option>
+                <option value="São Paulo">SP</option>
+                <option value="Sergipe">SE</option>
+                <option value="Tocantins">TO</option>
+                </select>
+            </div>
+            <div>
+                <label for="Sexo">Sexo</label>
+                <input type="radio" id="convidado" name="fav_language" value="convidado">
+                <label for="convidado">M</label>
+                <input type="radio" id="administrador" name="fav_language" value="administrador">
+                <label for="javascript">F</label>
+            </div>
+            <div>
+                <form>
+                    <label for="estCivil">Est.Civil</label>
+                    <select name="estCivil" id="estCivil">
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casado">Casado</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="viuvo">Viúvo</option>
+                    <option value="união estável">União Estável</option>
+                    </select>
+                </form>
+            </div>
+            <div>
+                <label for="Senha">Senha:</label>
+                <input type="password" id="pwd" name="pwd">
+            </div>
+        </div>
+        <div>
             <label for="login">Login</label>
             <input type="login" id="login" type="login">
         </div>
-            
+        
+        <br>
+        <h3>Deseja receber informações sobre os seguintes assuntos abaixo:</h3>
         <div>
-            <label for="cidade">Cidade</label>
-            <input type="cidade" id="cidade" type="cidade">
-    
-            <label for="uf">UF</label>
-            <select name="uf" id="uf">
-            <option value="Acre">AC</option>
-            <option value="Alagoas">AL</option>
-            <option value="Amazonas">AM</option>
-            <option value="Bahia">BA</option>
-            <option value="Ceará">CE</option>
-            <option value="Distrito Federal">DF</option>
-            <option value="Espírito Santo">ES</option>
-            <option value="Goiás">GO</option>
-            <option value="Maranhão">MA</option>
-            <option value="Mato Grosso">MT</option>
-            <option value="Mato Grosso do Sul">MS</option>
-            <option value="Minas Gerais">MG</option>
-            <option value="Pará">PA</option>
-            <option value="Paraíba">PB</option>
-            <option value="Paraná">PR</option>
-            <option value="Pernambuco">PE</option>
-            <option value="Piauí">PI</option>
-            <option value="Rio de Janeiro">RJ</option>
-            <option value="Rio Grande do Norte">RN</option>
-            <option value="Rio Grande do Sul">RS</option>
-            <option value="Rondônia">RO</option>
-            <option value="Roraima">RR</option>
-            <option value="Santa Catarina">SC</option>
-            <option value="São Paulo">SP</option>
-            <option value="Sergipe">SE</option>
-            <option value="Tocantins">TO</option>
-        </div>>
-        <form>
-            <label for="pwd">Sexo</label>
-            <input type="radio" id="convidado" name="fav_language" value="convidado">
-            <label for="convidado">M</label>
-            <input type="radio" id="administrador" name="fav_language" value="administrador">
-            <label for="javascript">F</label>
-        </form>
-        <form>
-            <label for="estCivil">Est.Civil</label>
-            <select name="estCivil" id="estCivil">
-            <option value="solteiro">Solteiro</option>
-            <option value="casado">Casado</option>
-            <option value="divorciado">Divorciado</option>
-            <option value="viuvo">Viúvo</option>
-            <option value="união estável">União Estável</option>
-        </form>
-        <form>
-            <label for="pwd">Senha:</label>
-            <input type="password" id="pwd" name="pwd">
-        </form>
-        <h2>Deseja receber informações sobre os seguintes assuntos abaixo:</h2>
-        <div>
+        <br>
         <input type="checkbox" id="vehicle1" name="vehicle1" value="tecnologia">
         <label for="vehicle1">Tecnologia</label>
         <input type="checkbox" id="vehicle2" name="vehicle2" value="esportes">
@@ -121,6 +143,7 @@
         <input type="checkbox" id="vehicle3" name="vehicle3" value="tempo">
         <label for="vehicle3">Tempo</label>
         </div>
+        <br>
         <input type="checkbox" id="vehicle1" name="vehicle1" value="cultura">
         <label for="vehicle1">Cultura</label>
         <input type="checkbox" id="vehicle2" name="vehicle2" value="economia">
@@ -136,11 +159,13 @@
         <input type="checkbox" id="vehicle3" name="vehicle3" value="empregos">
         <label for="vehicle3">Modo e Estilo</label>
         <br>
+        <br>
         <input type="checkbox" id="vehicle3" name="vehicle3" value="tempo">
         <label for="vehicle3">Li as regras de cadastro e autorizo a criação do usuário</label>
-        <section>
-            <input type="submit" value="Confimar">
-        <input type="reset" value="Retornar">
+        <section class="botao">
+        <br>
+        <button>Confimar</button>
+        <button>Retornar</button>
         </section>
     </div>
     
